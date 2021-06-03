@@ -1,0 +1,128 @@
+/* default e utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.hide{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+/* default e utility */
+
+/* header part */
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-img,.footer-img{
+    width: 200px;
+    height: 100px;
+}
+.header-img img{
+    width: 100%;
+}
+/* header part */
+
+
+/* main part */
+main{
+    width: 100%;
+    background-color: #344EA9;
+}
+
+.main-content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main part form */
+.main-content .custom-form{
+    width: 80%;
+    height:calc(100vh - 250px);
+    justify-content: center;
+}
+
+.custom-form > .form{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.custom-form > .form .back-button{
+    justify-self: unset;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+.custom-form > .form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.custom-form > .form input,.custom-form > .form button{
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    border: none;
+}
+.custom-form > .form button{
+    height: 50px;
+    background-color: #fff;
+    color: #344EA9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.custom-form > .form input::placeholder{
+    padding-left: 10px;
+    color: #575757;
+}
+
+@media (max-width: 769.98px) { 
+    .main-content .custom-form{
+        width: 80%;
+        height: 1200px;
+        flex-direction: column;
+    }
+    .custom-form > .form{
+        width: 100%;
+        height: 100%;
+    }
+    .custom-form > .form button{
+        font-size: 1.2em;
+    }
+}
+/* main part form */
+
+/* main end */
+
+
+
+/* footer part */
+
+footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.footer-img img{
+    width: 200px;
+}
+
+/* footer part */

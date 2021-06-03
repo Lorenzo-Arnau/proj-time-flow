@@ -1,0 +1,37 @@
+@import '_variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+.wrapper{
+    @include flex;
+    @include flex-centred;
+    height: 100vh;
+    width: 100%;
+    .login-link{
+        position: absolute;
+        right: 10px;
+        top: 18px;
+        a{
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    .content{
+        @include flex;
+        @include flex-centred;
+        font-size: 98px;
+        width: 80%;
+        height: 400px;
+    }
+}

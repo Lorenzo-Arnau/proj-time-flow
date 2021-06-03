@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header,main{
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+}
+nav{
+    width: 80%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    background-color: floralwhite;
+    border-radius: 2px;
+}
+.section-one{
+    width: 80%;
+    height: calc(100vh - 125px);
+    display: flex;
+    justify-content: center;
+}
+.food-card{
+    width: 250px;
+    height: 300px;
+    background-color: floralwhite;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 3px 10px -2px #000000;
+}
+.card-title,.card-desc{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.card-title{
+   font-size: 1.4em;
+   font-weight: bold;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.card-spec{
+    width:400px;
+    height: 200px;
+    box-shadow: 2px 3px 10px -2px #000000;
+    background-color: #000;
+    z-index: 400;
+    color: floralwhite;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    border-radius: 10px;
+    display: none;
+    padding: 30px;
+}
+
+.card-img:hover > .card-spec{
+    display: block;
+}
